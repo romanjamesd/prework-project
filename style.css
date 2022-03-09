@@ -1,5 +1,20 @@
 body {
-    background-image: linear-gradient(to right, blue, pink);
+    /*background-image: linear-gradient(to right, blue, pink);*/
+    display: flex;
+}
+
+div#left-side {
+    flex:1;
+    height: 100%;
+    width: 50%;
+    background-color: aqua;
+}
+
+div#right-side {
+    flex:1;
+    height: 100%;
+    width: 50%;
+    background-color: hotpink;
 }
 
 img {
@@ -7,4 +22,5 @@ img {
     border-radius: 8px;
     max-width: 40%;
     height: auto;
+    padding: 20px;
 }
