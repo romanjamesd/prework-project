@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
 body {
     /*background-image: linear-gradient(to right, blue, pink);*/
     display: flex;
@@ -8,6 +12,7 @@ div#left-side {
     height: 100%;
     width: 50%;
     background-color: aqua;
+    padding-top: 75px;
 }
 
 div#right-side {
@@ -15,12 +20,18 @@ div#right-side {
     height: 100%;
     width: 50%;
     background-color: hotpink;
+    padding-top: 75px;
 }
 
 img {
-    border: 1px solid #000
-    border-radius: 8px;
+    display: block;
+    margin-left: 25%;
+    border: 1px solid #000;
     max-width: 40%;
     height: auto;
     padding: 20px;
+}
+
+img#song1-pic, img#song3-pic {
+
 }
