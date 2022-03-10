@@ -42,18 +42,16 @@ img {
     height: auto;
     padding: 20px;
     margin:auto;
-    transition: color, ;
+    transition: border 1s ease, padding 1s ease, color 1s ease;
 }
 
 
 img#myCat.handsomeBoy {
-    display: block;
-    margin-left: 45%;
-    /*margin-right: 54%;*/
-    margin-top: 37%;
+    position: fixed;
+    margin-left: 43.8%;
+    margin-top: 23%;
     padding: 0%;
-    position: absolute;
-    width: 150px;
+    max-width: 12%;
 }
 
 div.icon-container {

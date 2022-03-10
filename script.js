@@ -13,4 +13,7 @@ const audioFiles = [firstSongAudio, secondSongAudio, thirdSongAudio, fourthSongA
 let songImages = [firstSongImage, secondSongImage, thirdSongImage, fourthSongImage];
 
 
-//animate image when mouse is on audio controls
+//animate image when audio controls engaged
+firstSongAudio.addEventListener('play', (event) => {
+    console.log(event.paused);
+})
