@@ -12,29 +12,26 @@ const fourthSongAudio = document.getElementById('song4-audio');
 const audioFiles = [firstSongAudio, secondSongAudio, thirdSongAudio, fourthSongAudio];
 let songImages = [firstSongImage, secondSongImage, thirdSongImage, fourthSongImage];
 
-/*document.addEventListener("click", function(event){
-    if (event.target === '<button type="button" class="play-button" id="song1-play-button">PLAY</button>') {
-        firstSongAudio.play();
-    }
-    else if (event.target === 'button#song2-play-button.play-button') {
-        secondSongAudio.play();
-    }
-    else if (event.target === 'button#song3-play-button.play-button') {
-        thirdSongAudio.play();
-    }
-    else if (event.target === 'button#song4-play-button.play-button') {
-        fourthSongAudio.play();
-    }
-    console.log(event.target);
-});*/
+while('true' === 'true') {
+    toggleButtons(firstSongAudio);
+    toggleButtons(secondSongAudio);
+    toggleButtons(thirdSongAudio);
+    toggleButtons(fourthSongAudio);
+}
 
+function toggleButtons(songNumAudio) {
+    const pauseButton = document.querySelector(`${songNumAudio} ~ button.pause-button`);
+    const playButton = document.querySelector(`${songNumAudio} ~ button.play-button`);
+    while (songNumAudio.isPaused === 'true') {
+        pauseButton.display = 'none';
+    }
+    while (songNumAudio.isPaused === 'false') {
+        playButton.display = 'none';
+    }
+}
 function playSong (songNumAudio) {
     songNumAudio.play();
 }
 function pauseSong (songNumAudio) {
     songNumAudio.pause();
 }
-
-//document.addEventListener('click', function (event) {
-    //playSong(document.querySelector(`${event.target} ~ audio`));
-//});
