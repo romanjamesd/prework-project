@@ -1,9 +1,8 @@
 html, body {
-    height: 100%;
-    margin: 0;
+    margin: 0%;
+    
 }
 body {
-    /*background-image: linear-gradient(to right, blue, pink);*/
     display: flex;
 }
 
@@ -23,13 +22,26 @@ div#right-side {
     padding-top: 75px;
 }
 
+h1 {
+    font-size: 3em;
+    padding: 4px;
+}
+h1#first-word.title {
+    color: hotpink;
+    text-align: right;
+
+}
+h1#second-word.title {
+    color:aqua;
+}
+
 img {
-    display: block;
-    margin-left: 25%;
+    display: flex;
     border: 1px solid #000;
-    max-width: 40%;
+    max-width: 60%;
     height: auto;
     padding: 20px;
+    margin:auto;
 }
 
 div.icon-container {
@@ -43,10 +55,7 @@ div#song1.songs, div#song3.songs {
 
 div#song2.songs, div#song4.songs {
     margin-top: 40px;
-}
-
-img#song1-pic.songs, img#song2-pic.songs {
-    background-color: hotpink;
+    margin-bottom: 20px;
 }
 
 audio.songs {
@@ -55,3 +64,4 @@ audio.songs {
     margin-right: auto;
     margin-top: 10px;
 }
+
