@@ -44,6 +44,14 @@ img {
     margin:auto;
 }
 
+img#myCat.handsomeBoy {
+    padding: 0%;
+    position: absolute;
+    top: 400px;
+    left: 372px;
+    max-width: 110px;
+}
+
 div.icon-container {
     justify-content: center;
     align-items: center;
