@@ -45,6 +45,19 @@ img {
     transition: padding, 2s, ease;
 }
 
+img.firstSong-change {
+    padding: 0px;
+}
+img.secondSong-change {
+    padding: 0px;
+}
+img.thirdSong-change {
+    padding: 0px;
+}
+img.fourthSong-change {
+    padding: 0px;
+}
+
 img#myCat.handsomeBoy {
     padding: 0%;
     position: absolute;
