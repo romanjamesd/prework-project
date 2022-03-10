@@ -35,6 +35,6 @@ function pauseSong (songNumAudio) {
     songNumAudio.pause();
 }
 
-document.addEventListener('click', function (event) {
-    playSong(document.querySelector(`${event.target} ~ audio`));
-});
+//document.addEventListener('click', function (event) {
+    //playSong(document.querySelector(`${event.target} ~ audio`));
+//});
