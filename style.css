@@ -41,12 +41,17 @@ div#song1.songs, div#song3.songs {
     margin-top: 5px;
 }
 
+div#song2.songs, div#song4.songs {
+    margin-top: 40px;
+}
+
+img#song1-pic.songs, img#song2-pic.songs {
+    background-color: hotpink;
+}
+
 audio.songs {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-img#song1-pic, img#song3-pic {
-
+    margin-top: 10px;
 }
