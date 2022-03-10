@@ -12,6 +12,11 @@ let secondSongImage = document.getElementById('song2-pic');
 let thirdSongImage = document.getElementById('song3-pic');
 let fourthSongImage = document.getElementById('song4-pic');
 
+const firstSongAudio = document.getElementById('song1-audio');
+const secondSongAudio = document.getElementById('song2-audio');
+const thirdSongAudio = document.getElementById('song3-audio');
+const fourthSongAudio = document.getElementById('song4-audio');
+
 //animate image when mouse is on audio controls
 function shrinkPadding() {
 
