@@ -42,6 +42,7 @@ img {
     height: auto;
     padding: 20px;
     margin:auto;
+    transition: padding, 2s, ease;
 }
 
 img#myCat.handsomeBoy {
@@ -57,16 +58,16 @@ div.icon-container {
     align-items: center;
 }
 
-div#song1.songs, div#song3.songs {
+div#song1, div#song3 {
     margin-top: 5px;
 }
 
-div#song2.songs, div#song4.songs {
+div#song2, div#song4 {
     margin-top: 40px;
     margin-bottom: 20px;
 }
 
-audio.songs {
+audio {
     display: block;
     margin-left: auto;
     margin-right: auto;
