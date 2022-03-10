@@ -48,15 +48,15 @@ img {
 
 img#myCat.handsomeBoy {
     position: fixed;
-    margin-left: 43.8%;
+    margin-left: 44.1%;
     margin-top: 23%;
     padding: 0%;
-    max-width: 12%;
+    max-width: 11.5%;
 }
 
 div.icon-container {
+    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 div#song1, div#song3 {
