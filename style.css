@@ -42,28 +42,18 @@ img {
     height: auto;
     padding: 20px;
     margin:auto;
-    transition: padding, 2s, ease;
+    transition: color, ;
 }
 
-img.firstSong-change {
-    padding: 0px;
-}
-img.secondSong-change {
-    padding: 0px;
-}
-img.thirdSong-change {
-    padding: 0px;
-}
-img.fourthSong-change {
-    padding: 0px;
-}
 
 img#myCat.handsomeBoy {
+    display: block;
+    margin-left: 45%;
+    /*margin-right: 54%;*/
+    margin-top: 37%;
     padding: 0%;
     position: absolute;
-    top: 400px;
-    left: 372px;
-    max-width: 110px;
+    width: 150px;
 }
 
 div.icon-container {
