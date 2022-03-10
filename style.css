@@ -56,7 +56,22 @@ img#myCat.handsomeBoy {
 
 div.icon-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+button {
+    margin-top: 10px;
+    min-width: 100px;
+}
+
+#left-side button {
+    background-color: hotpink;
+    color: white;
+}
+
+#right-side button {
+    background-color: aqua;
+    color: white;
 }
 
 div#song1, div#song3 {
@@ -66,12 +81,5 @@ div#song1, div#song3 {
 div#song2, div#song4 {
     margin-top: 40px;
     margin-bottom: 20px;
-}
-
-audio {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
 }
 

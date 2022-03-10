@@ -12,8 +12,6 @@ const fourthSongAudio = document.getElementById('song4-audio');
 const audioFiles = [firstSongAudio, secondSongAudio, thirdSongAudio, fourthSongAudio];
 let songImages = [firstSongImage, secondSongImage, thirdSongImage, fourthSongImage];
 
-
-//animate image when audio controls engaged
-firstSongAudio.addEventListener('play', (event) => {
-    console.log(event.paused);
-})
+function playSong () {
+    
+}
