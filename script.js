@@ -32,15 +32,83 @@ let songImages = [firstSongImage, secondSongImage, thirdSongImage, fourthSongIma
     console.log(e);
 });*/
 
-firstSongAudio.addEventListener('playing', function(e) {
+//changes color if song has been started and reverts when finished
+/*firstSongAudio.addEventListener('playing', function(e) {
     //console.log(e);
     
     if (e.type === "playing") {
         firstSongImage.style.backgroundColor = '#ff69b4';
     }
+    else if (firstSongAudio.currentTime === '112') {
+        firstSongImage.style.backgroundColor = '#00ffff';
+    }
 });
 
-firstSongAudio.addEventListener
+secondSongAudio.addEventListener('playing', function(e) { 
+    if (e.type === "playing") {
+        secondSongImage.style.backgroundColor = '#ff69b4';
+    }
+    else if (secondSongAudio.currentTime === '119.435941') {
+        secondSongImage.style.backgroundColor = '#00ffff';
+    }
+});
+
+thirdSongAudio.addEventListener('playing', function(e) {
+    if (e.type === "playing") {
+        thirdSongImage.style.backgroundColor = '#00ffff';
+    }
+    else if (thirdSongAudio.currentTime === '144.0653') {
+        thirdSongImage.style.backgroundColor = '#ff69b4';
+    }
+});
+
+fourthSongAudio.addEventListener('playing', function(e) {
+    if (e.type === "playing") {
+        fourthSongImage.style.backgroundColor = '#00ffff';
+    }
+    else if (fourthSongAudio.currentTime === '133.565238') {
+        fourthSongImage.style.backgroundColor = '#ff69b4';
+    }
+});*/
+
+//play and pause buttons
+play1.addEventListener('click', function() {
+    firstSongAudio.play();
+    firstSongImage.style.backgroundColor = '#ff69b';
+});
+pause1.addEventListener('click', function () {
+    firstSongAudio.pause();
+    firstSongAudio.currentTime = '0';
+});
+
+play2.addEventListener('click', function() {
+    secondSongAudio.play();
+    secondSongImage.style.backgroundColor = '#ff69b';
+});
+pause2.addEventListener('click', function () {
+    secondSongAudio.pause();
+    secondSongAudio.currentTime = '0';
+});
+
+play3.addEventListener('click', function() {
+    thirdSongAudio.play();
+    thirdSongImage.style.backgroundColor = '#00ffff';
+});
+pause3.addEventListener('click', function () {
+    thirdSongAudio.pause();
+    thirdSongAudio.currentTime = '0';
+});
+
+play4.addEventListener('click', function() {
+    fourthSongAudio.play();
+    thirdSongImage.style.backgroundColor = '#00ffff';
+});
+pause4.addEventListener('click', function () {
+    fourthSongAudio.pause();
+    fourthSongAudio.currentTime = '0';
+});
+
+
 
 
 //functions
