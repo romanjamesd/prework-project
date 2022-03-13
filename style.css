@@ -18,7 +18,7 @@ div#right-side {
     flex:1;
     height: 100%;
     width: 50%;
-    background-color: hotpink;
+    background-color: #ff69b4;
     padding-top: 75px;
 }
 
@@ -65,7 +65,7 @@ button {
 }
 
 #left-side button {
-    background-color: hotpink;
+    background-color: #ff69b4;
     color: white;
 }
 
@@ -83,3 +83,6 @@ div#song2, div#song4 {
     margin-bottom: 20px;
 }
 
+/*img.firstSong {
+    background-color: #ff69b4;
+}
