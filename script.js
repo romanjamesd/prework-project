@@ -20,7 +20,7 @@ const play4 = document.getElementById('song4-play-button');
 //pause buttons
 const pause1 = document.getElementById('song1-pause-button');
 const pause2 = document.getElementById('song2-pause-button');
-const pause3 = document.getElementById('song3-play-button');
+const pause3 = document.getElementById('song3-pause-button');
 const pause4 = document.getElementById('song4-pause-button');
 
 
@@ -73,8 +73,9 @@ fourthSongAudio.addEventListener('playing', function(e) {
 
 //play and pause buttons
 play1.addEventListener('click', function() {
+    checkStatusOfSongs();
     firstSongAudio.play();
-    firstSongImage.style.backgroundColor = '#ff69b';
+    firstSongImage.style.backgroundColor = '#ff69b4';
 });
 pause1.addEventListener('click', function () {
     firstSongAudio.pause();
@@ -82,8 +83,9 @@ pause1.addEventListener('click', function () {
 });
 
 play2.addEventListener('click', function() {
+    checkStatusOfSongs();
     secondSongAudio.play();
-    secondSongImage.style.backgroundColor = '#ff69b';
+    secondSongImage.style.backgroundColor = '#ff69b4';
 });
 pause2.addEventListener('click', function () {
     secondSongAudio.pause();
@@ -91,8 +93,9 @@ pause2.addEventListener('click', function () {
 });
 
 play3.addEventListener('click', function() {
+    checkStatusOfSongs();
     thirdSongAudio.play();
-    //thirdSongImage.style.backgroundColor = '#00ffff';
+    thirdSongImage.style.backgroundColor = '#00ffff';
 });
 pause3.addEventListener('click', function () {
     thirdSongAudio.pause();
@@ -100,6 +103,7 @@ pause3.addEventListener('click', function () {
 });
 
 play4.addEventListener('click', function() {
+    checkStatusOfSongs();
     fourthSongAudio.play();
     fourthSongImage.style.backgroundColor = '#00ffff';
 });
@@ -117,4 +121,11 @@ function playSong (songNumAudio) {
 }
 function pauseSong (songNumAudio) {
     songNumAudio.pause();
+}
+function checkStatusOfSongs () {
+    for (let i = 0; i < audioFiles.length; i++) {
+        if (audioFiles[i].paused == false) {
+            audioFiles[i].pause();
+        }
+    }
 }
