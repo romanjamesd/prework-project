@@ -116,12 +116,6 @@ pause4.addEventListener('click', function () {
 
 
 //functions
-function playSong (songNumAudio) {
-    songNumAudio.play();
-}
-function pauseSong (songNumAudio) {
-    songNumAudio.pause();
-}
 function checkStatusOfSongs () {
     for (let i = 0; i < audioFiles.length; i++) {
         if (audioFiles[i].paused == false) {
