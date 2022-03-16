@@ -92,7 +92,7 @@ pause2.addEventListener('click', function () {
 
 play3.addEventListener('click', function() {
     thirdSongAudio.play();
-    thirdSongImage.style.backgroundColor = '#00ffff';
+    //thirdSongImage.style.backgroundColor = '#00ffff';
 });
 pause3.addEventListener('click', function () {
     thirdSongAudio.pause();
@@ -101,7 +101,7 @@ pause3.addEventListener('click', function () {
 
 play4.addEventListener('click', function() {
     fourthSongAudio.play();
-    thirdSongImage.style.backgroundColor = '#00ffff';
+    fourthSongImage.style.backgroundColor = '#00ffff';
 });
 pause4.addEventListener('click', function () {
     fourthSongAudio.pause();
